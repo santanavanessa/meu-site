@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Responsivo com HTML, CSS e JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div>
+          <h1 class="logo">Logo</h1>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+
+        <div class="mobile-menu-icon">
+          <button onclick="showMenu()">
+            <img src="assets/menu_white.svg" alt="" class="icon" />
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Meu Site</h1>
+    </main>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

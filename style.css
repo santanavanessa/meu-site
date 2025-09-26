@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #3498cb;
+}
+
+body {
+  height: 5000px;
+  padding-top: 70px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav {
+  padding: 0.625rem 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #004274;
+  position: relative;
+  min-height: 70px;
+}
+
+.logo,
+h1 {
+  color: #fff;
+}
+
+main h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #004274;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 1.6rem;
+    color: #fff;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding: 1rem;
+  }
+
+  .open {
+    display: block;
+  }
+}
