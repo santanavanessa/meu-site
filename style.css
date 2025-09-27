@@ -164,7 +164,7 @@ main {
   font-size: 1.3rem;
   font-weight: 300;
   max-width: 700px;
-  margin: 1.5rem auto 2.5rem auto;
+  margin: 1.5rem auto 4rem auto;
 }
 
 .cta-button {
@@ -176,6 +176,8 @@ main {
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(52, 152, 203, 0.4);
+  display: inline-block; /* Garante que o margin-top funcione corretamente */
+  margin-top: 2rem;
 }
 
 .cta-button:hover {
